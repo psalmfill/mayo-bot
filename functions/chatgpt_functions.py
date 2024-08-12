@@ -65,5 +65,5 @@ def register_handlers_chatgpt(dp: Dispatcher, bot: Bot):
                 message_thread_id=2  # Specify the thread ID here
             )
         except Exception as e:
-            print(e)
+            print("Error:" e)
         await chat_command(message)

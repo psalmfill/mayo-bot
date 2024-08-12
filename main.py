@@ -45,7 +45,8 @@ async def main():
         await get_me()
         await dp.start_polling(bot)
     except Exception as e :
-        print(e)
+        print("Error:" e)
+
 
 
 if __name__ == "__main__":

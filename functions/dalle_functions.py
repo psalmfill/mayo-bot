@@ -31,8 +31,6 @@ async def generate_image_command(message: types.Message, state: FSMContext):
     prompt_array.pop(0)
     prompt = " ".join(prompt_array)
 
-    print(prompt, prompt_array)
-
     if prompt:
         await state.set_state(DalleStates.showing_image)  # Set the next state
         # Pass the state to the function
