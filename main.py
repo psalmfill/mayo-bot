@@ -45,7 +45,7 @@ async def main():
         await get_me()
         await dp.start_polling(bot)
     except Exception as e :
-        print("Error:" e)
+        print("Error:", e)
 
 
 
